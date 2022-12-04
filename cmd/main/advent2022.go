@@ -8,7 +8,7 @@ import (
     "advent2022/day01"
     "advent2022/day02"
     "advent2022/day03"
-    //"advent2022/day04"
+    "advent2022/day04"
     utils "advent2022/utils"
 )
 
@@ -72,6 +72,10 @@ func main() {
         fmt.Println(answer2)
     case 3:
         answer1, answer2 := day03.Solve(utils.ReadLines(*input))
+        fmt.Println(answer1)
+        fmt.Println(answer2)
+    case 4:
+        answer1, answer2 := day04.Solve(utils.ReadLines(*input))
         fmt.Println(answer1)
         fmt.Println(answer2)
     default:
