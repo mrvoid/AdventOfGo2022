@@ -15,11 +15,11 @@ func ReadLines(filename string) []string {
 	
     for {
         line, _, err := reader.ReadLine()
-		lines = append(lines, string(line))
-
-		if err == io.EOF {
+        if err == io.EOF {
             break
         }
+
+		lines = append(lines, string(line))
     }
 
 	return lines

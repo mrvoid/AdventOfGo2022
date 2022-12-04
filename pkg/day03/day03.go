@@ -16,10 +16,6 @@ func score(item byte) int{
 func solve1(lines []string) int {
 	total := 0
 	for _, line := range lines {
-		if len(line) == 0 {
-			continue
-		}
-
 		var bins [256]byte
 		for i, c := range line {
 			var mask byte
@@ -45,10 +41,6 @@ func solve1(lines []string) int {
 func solve2(lines []string) int {
 	total := 0
 	for i := 0; i < len(lines); i += 3 {
-		if len(lines[i]) == 0 {
-			break
-		}
-
 		var bins [256]byte
 		for s := 0; s < 3; s++ { // Would love to see it as an adhoc range
 			mask := (byte)(0b1 << s)

@@ -37,10 +37,6 @@ func parseSections(line string) (section, section) {
 func solve1(lines []string) int {
 	total := 0
 	for _, line := range lines {
-		if len(line) == 0 {
-			continue
-		}
-
 		sec1, sec2 := parseSections(line)
 		if contains(sec1, sec2) || contains(sec2, sec1) {
 			total ++;
@@ -53,10 +49,6 @@ func solve1(lines []string) int {
 func solve2(lines []string) int {
 	total := 0
 	for _, line := range lines {
-		if len(line) == 0 {
-			continue
-		}
-
 		sec1, sec2 := parseSections(line)
 		if (contains(sec1, sec2) || contains(sec2, sec1)) || (overlap(sec1, sec2) || overlap(sec2, sec1)) {
 			total ++;
