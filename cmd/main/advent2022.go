@@ -7,29 +7,9 @@ import (
     "errors"
     "advent2022/day01"
     "advent2022/day02"
+    "advent2022/day03"
+    //"advent2022/day04"
     utils "advent2022/utils"
-//    "advent2022/day03"
-//    "advent2022/day04"
-//    "advent2022/day05"
-//    "advent2022/day06"
-//    "advent2022/day07"
-//    "advent2022/day08"
-//    "advent2022/day09"
-//    "advent2022/day10"
-//    "advent2022/day11"
-//    "advent2022/day12"
-//    "advent2022/day13"
-//    "advent2022/day14"
-//    "advent2022/day15"
-//    "advent2022/day16"
-//    "advent2022/day17"
-//    "advent2022/day18"
-//    "advent2022/day19"
-//    "advent2022/day20"
-//    "advent2022/day21"
-//    "advent2022/day22"
-//    "advent2022/day23"
-//    "advent2022/day24"
 )
 
 func check(e error) {
@@ -88,6 +68,10 @@ func main() {
         fmt.Println(answer2)
     case 2:
         answer1, answer2 := day02.Solve(utils.ReadLines(*input))
+        fmt.Println(answer1)
+        fmt.Println(answer2)
+    case 3:
+        answer1, answer2 := day03.Solve(utils.ReadLines(*input))
         fmt.Println(answer1)
         fmt.Println(answer2)
     default:

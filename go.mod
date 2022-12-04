@@ -8,5 +8,8 @@ require advent2022/day01 v0.0.0-00010101000000-000000000000
 replace advent2022/day02 => ./pkg/day02
 require advent2022/day02 v0.0.0-00010101000000-000000000000
 
+replace advent2022/day03 => ./pkg/day03
+require advent2022/day03 v0.0.0-00010101000000-000000000000
+
 replace advent2022/utils => ./pkg/utils
 require advent2022/utils v0.0.0-00010101000000-000000000000
